@@ -27,14 +27,4 @@ public class FileAppendManager {
 	public void close() {
 		FilePoolManager.getInstance().close();
 	}
-	
-	public String makeTargetFileName(String prefix, String targetPath) {
-		StringBuilder sb = new StringBuilder();
-		sb.append(targetPath)
-			.append(File.separator)
-			.append(prefix)
-			.append(".txt");
-		
-		return sb.toString();
-	}
 }
