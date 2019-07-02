@@ -6,6 +6,7 @@ Words Classification
 2. 동일한 단어는 항상 같은 파티션에 기록하기 위해 HashCode를 사용.
 3. 데이터의 유효성을 검증하는 기능은 변화할 수 있다고 판단하여, 인터페이스로 설계 
 4. CountDownLatch를 활용하여 Graceful Shutdown 수행하고자 함.
+5. 각 파일에 데이터를 기록하는 BufferedWriter을 pool로 관리하여 재사용함.
 
 # 클래스 설계
 
