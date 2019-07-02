@@ -10,9 +10,6 @@ public class RegexBasedVerifier implements StringVerifier {
 		this.pattern = Pattern.compile(regex);
 	}
 	
-	/**
-	 * String 정규표현식 검증
-	 */
 	@Override
 	public boolean verify(String value) {
 		Matcher matcher = pattern.matcher(value);
