@@ -1,7 +1,6 @@
 package com.kakao.work.file;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.IOException;
 
 public class FileAppendManager {
